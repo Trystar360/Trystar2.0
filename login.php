@@ -18,29 +18,6 @@ session_start();
 <body>
 
     <header>
-        <nav>
-            <div class="mainWrapper">
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                </ul>
-                <div class="navLogin">
-                    <?php
-                        if (isset($_SESSION['uId'])) {
-                            echo '<form action="includes/logout.php" method="POST">
-                                    <button type="submit" name="submit">Logout</button>
-                                </form>';
-                        }else{
-                            echo'<form action="includes/login.php" method="POST">
-                            <input type="text" name="uid" placeholder="Username / Email">
-                            <input type="password" name="pass" placeholder="Password">
-                            <button type="submit" name="submit">Login</button>
-                            </form>
-                            <a href="signup.php">Sign up!</a>';
-                        }
-                    ?>
-                </div>
-            </div>
-        </nav>
         <section>
             <?php
                 if (isset($_SESSION['uId'])) {
@@ -52,17 +29,24 @@ session_start();
                 <ul class="collapsible">
                     <li>
                         <div class="collapsible-header">
-                        <i class="material-icons">filter_drama</i>
-                        Login
-                        <span class="new badge">4</span></div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                                Login
+                        </div>
+                        <div class="collapsible-body">
+                            <form action="includes/login.php" method="POST">
+                            <input type="text" name="uid" placeholder="Username / Email">
+                            <input type="password" name="pass" placeholder="Password">
+                            <button type="submit" name="submit">Login</button>
+                            </form>
+                        </div>
                     </li>
                     <li>
                         <div class="collapsible-header">
-                        <i class="material-icons">place</i>
                         Sign Up
-                        <span class="badge">1</span></div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                        <div class="collapsible-body">
+                            
+                            <h1>Sign Up!</h1>
+                    
+                        </div>
                     </li>
                 </ul>
 
