@@ -53,14 +53,14 @@ session_start();
                     <li>
                         <div class="collapsible-header">
                         <i class="material-icons">filter_drama</i>
-                        First
+                        Login
                         <span class="new badge">4</span></div>
                         <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
                     </li>
                     <li>
                         <div class="collapsible-header">
                         <i class="material-icons">place</i>
-                        Second
+                        Sign Up
                         <span class="badge">1</span></div>
                         <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
                     </li>
@@ -68,6 +68,10 @@ session_start();
 
 
     </header>
-    
+      <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/device.js"></script>
 </body>
 </html>
