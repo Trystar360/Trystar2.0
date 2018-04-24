@@ -41,9 +41,9 @@ session_start();
                     </li>
                     <li>
                         <div class="collapsible-header">
-                        Sign Up
+                                Sign Up
+                        </div>
                         <div class="collapsible-body">
-                            
                         <form action="includes/signupPhp.php" method="POST">
                             <input type="text" name="first" placeholder="First Name">
                             <input type="text" name="last" placeholder="Last Name">
@@ -52,7 +52,6 @@ session_start();
                             <input type="password" name="pass" placeholder="Password">
                             <button type="submit" name="submit">Sign Up</button>
                         </form>
-                    
                         </div>
                     </li>
                 </ul>
