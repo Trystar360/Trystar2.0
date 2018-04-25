@@ -32,3 +32,10 @@
 .desktop, .mobile{
 	display: none;
 }
+#loggedin{
+	display: none;
+}
+#notloggedin{
+	display: none;
+}
+
