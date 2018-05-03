@@ -29,4 +29,13 @@
 	color:rgb(150,150,150);
 }
 
+.desktop, .mobile{
+	display: none;
+}
+#loggedin{
+	display: none;
+}
+#notloggedin{
+	display: none;
+}
 
