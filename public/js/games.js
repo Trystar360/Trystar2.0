@@ -48,3 +48,22 @@ function submitGame() {
         var link = $('#gameLink').val('');
     }
 }
+
+function addGame(Img, Game, Desc, Link){
+    $('#gameCont').append('\
+        <div class="col m6">\
+            <div class="card">\
+                <div class="card-image">\
+                <img src="'+ Img + '">\
+                <span class="card-title">'+Game+'</span>\
+                </div>\
+                <div class="card-content">\
+                <p>'+Desc+'</p>\
+                <div style="padding-bottom: 13px;"></div>\
+                </div>\
+                <div class="card-action">\
+                <a href="'+ link + '">Play</a>\
+                </div>\
+            </div>\
+            </div>');
+}

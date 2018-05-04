@@ -1,3 +1,16 @@
+var config = {
+  apiKey: "AIzaSyDjXuw1w_dveSvhwXUDWmagkWortuH2RqU",
+  authDomain: "trystar-2ba0c.firebaseapp.com",
+  databaseURL: "https://trystar-2ba0c.firebaseio.com",
+  projectId: "trystar-2ba0c",
+  storageBucket: "trystar-2ba0c.appspot.com",
+  messagingSenderId: "1019390804088"
+};
+firebase.initializeApp(config);
+
+var db = firebase.database();
+
+
 (function($){
   $(function(){
 

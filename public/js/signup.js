@@ -1,14 +1,4 @@
-var config = {
-    apiKey: "AIzaSyByUyn6WT8DcE8z9T0Tong0OAkoaFEuxzE",
-    authDomain: "database-test-2e21e.firebaseapp.com",
-    databaseURL: "https://database-test-2e21e.firebaseio.com",
-    projectId: "database-test-2e21e",
-    storageBucket: "database-test-2e21e.appspot.com",
-    messagingSenderId: "158761518926"
- };
-firebase.initializeApp(config);
 
-var db = firebase.database();
 var ref = db.ref('users');
 
     signup.onsubmit = function() {
