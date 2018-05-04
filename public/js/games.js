@@ -30,11 +30,13 @@ function submitGame() {
     if (user == '' || game == '') {
         M.toast({ html: 'Please fill out all required fields.', classes: 'rounded' });
     } else {
+        console.log(Date.now())
         db.ref('/submitions').push({
             User: user,
             Email: email,
             GameName: game,
-            GameLink: link
+            GameLink: link,
+            Time: Date.now()
         });
 
         console.log("Submitted");
