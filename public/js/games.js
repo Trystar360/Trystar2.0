@@ -49,7 +49,7 @@ function submitGame() {
     }
 }
 
-function addGame(Img, Game, Desc, Link){
+function addGameCard(Img, Game, Desc, Link){
     $('#gameCont').append('\
         <div class="col m6">\
             <div class="card">\
